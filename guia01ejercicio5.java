@@ -16,6 +16,8 @@ public class guia01ejercicio5 {
         } else { 
             System.out.println("Ambos valores son iguales.");
         
+
+        scanner.close();    
         }
             
         }
