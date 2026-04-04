@@ -11,9 +11,7 @@ public class ejercicioextrajuego {
 
         
 
-        If (sc==1) {
-
-        }
+        
 
 
 

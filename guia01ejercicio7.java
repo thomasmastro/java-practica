@@ -8,12 +8,12 @@ public class guia01ejercicio7 {
         int num1 = scanner.nextInt();
         System.out.print("Ingrese el segundo numero ");
         int num2 = scanner.nextInt();
-        System.out.print("Ingrese el tercero numero ");
+        System.out.print("Ingrese el tercer numero ");
         int num3 = scanner.nextInt();
 
         System.out.printf("%d %d %d",num1,num2,num3);
         System.out.print(" Te los escribo en el orden que los escribiste");
-        System.out.println("");
+        System.out.println();
 
         if (num1 == num2 && num2 == num3 ) {
             System.out.printf("%d %d %d", num1,num2,num3);    
