@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ejercicioextrajuega4 {
+public class EjercicioExtraJuego4 {
 public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -12,7 +12,6 @@ public static void main(String[] args) {
     System.out.print("Ingrese una contraseña ");
 
     String contra = sc.nextLine();
-    boolean seguridad = false;
 
     if (contra.length() < 10) {
         System.out.println("La contraseña debe tener al menos 10 caracteres.");
@@ -43,46 +42,32 @@ public static void main(String[] args) {
 
     }
 
-    if (contnum > 0) {
-        seguridad = true;
-    }
-    else{
+    if (contnum == 0) {
         System.out.println("Contraseña insegura, no contiene numeros");
         sc.close();
         return;
     }
 
-    if (contlet > 0) {
-        seguridad = true;
-    }
-    else {
+    if (contlet == 0) {
         System.out.println("Contraseña insegura, no contiene letras");
         sc.close();
         return;
     }
 
-    if (contmayus > 0) {
-        seguridad = true;
-    }
-    else {
+    if (contmayus == 0) {
         System.out.println("Contraseña insegura, no contiene mayusculas");
         sc.close();
         return;
     }
 
-    if (contcaractes > 0) {
-        seguridad = true;
-    }
-    else {
+    if (contcaractes == 0) {
         System.out.println("Contraseña insegura, no contiene caracteres especiales");
         sc.close();
         return;
     }
 
 
-     if (seguridad) {
-            System.out.println("La contraseña es segura");
-        }
+    System.out.println("La contraseña es segura");
 
 
 
