@@ -19,8 +19,9 @@ public class contavocales {
         Scanner sc = new Scanner(System.in);
 
         String palabra = sc.next();
+        char letra = sc.next
 
-        char letra = palabra.charAt(0);
+        char letra = sc.next().charAt(0);
 
         
 
