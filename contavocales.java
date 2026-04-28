@@ -16,16 +16,11 @@ public class contavocales {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        String palabra = sc.next();
-        char letra = sc.next
-
-        char letra = sc.next().charAt(0);
-
+        char letrita = "l";
         
 
-        System.out.println("La palabra" + palabra + " tiene " + letra + contVocales(palabra, letra) + " veces");
+        
     }
 
 

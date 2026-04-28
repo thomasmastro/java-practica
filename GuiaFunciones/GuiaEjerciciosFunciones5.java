@@ -1,3 +1,4 @@
+package GuiaFunciones;
 import java.util.Scanner;
 
 public class GuiaEjerciciosFunciones5 {

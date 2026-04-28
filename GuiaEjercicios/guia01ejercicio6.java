@@ -1,3 +1,4 @@
+package GuiaEjercicios;
 import java.util.Scanner;
 public class guia01ejercicio6 {
     public static void main(String[] args) {
