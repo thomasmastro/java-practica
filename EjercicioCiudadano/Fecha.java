@@ -15,30 +15,64 @@ public class Fecha {
     }
 
     //metodo
-    public String FechaCompleta(){
+    public String fechaCompleta(){
         return dia + "/" + mes + "/" + anio;
 
     }
 
     //metodo
-    public void Hoy(){
-        this.dia = 25;
-        this.mes = 9;
-        this.anio = 2025;
+    public static Fecha hoy(){
+        return new Fecha(29,4,2026);
     }
 
-    //public int distanciaEnAnios(Fecha fecha1, Fecha fecha2){
-    //    if (fecha1(anio) > fecha2(anio)){
-    //
-    //
-    //    }
-    //    return fecha
-    //}
+    //metodo
+    public int distanciaEnAnios(Fecha otraFecha){
+        int diferencia = this.anio - otraFecha.anio;
+        return Math.abs(diferencia);
+    }
+
+    public int getDia() {
+        return dia;
+    }
+
+    public void setDia(int dia) {
+        if (dia >= 1 && dia <=31) {
+            this.dia = dia;
+        }
+        else {
+            System.out.println("Error el dia no existe.");
+        }
+    }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public void setMes(int mes) {
+        if (mes >=1 && mes <= 12) {
+            this.mes = mes;
+        }
+        else {
+            System.out.println("Error el mes no existe.");
+        }
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public void setAnio(int anio) {
+        if (anio >=1990 && anio <=2026) {
+            this.anio = anio;
+        }
+        else {
+            System.out.println("El año no existe");
+        }
+    }
 
     public static void main(String[] args) {
-        Fecha f1 = new Fecha(0,0,0);
-        f1.Hoy();
-        System.out.println(f1.FechaCompleta());
+        
+        System.out.println(Fecha.hoy().fechaCompleta());
     }
 
 
