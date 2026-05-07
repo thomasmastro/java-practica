@@ -20,6 +20,8 @@ public class Ciudadano{
         this.tramite = Tramite.NINGUNO;
     }
 
+    @Override
+
     //metodo
     public String toString() {
         return "Hola soy " + this.getApellido() + " " + this.getNombre() + " y naci el " 

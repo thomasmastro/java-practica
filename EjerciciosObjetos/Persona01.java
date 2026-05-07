@@ -1,3 +1,4 @@
+package EjerciciosObjetos;
 public class Persona01 {
 
 

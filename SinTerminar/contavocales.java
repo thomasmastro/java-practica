@@ -1,3 +1,4 @@
+package SinTerminar;
 import java.util.Scanner;
 
 public class contavocales {
@@ -17,7 +18,7 @@ public class contavocales {
 
     public static void main(String[] args) {
 
-        char letrita = "l";
+        
         
 
         

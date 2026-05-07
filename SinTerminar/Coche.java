@@ -1,3 +1,4 @@
+package SinTerminar;
 import java.util.Scanner;
 
 public class Coche {
@@ -16,8 +17,6 @@ public class Coche {
         Scanner sc = new Scanner(System.in);
         delta = sc.nextInt();
         velocidad = delta + velocidad;
-
-        return velocidad;
 
     }
     
