@@ -5,6 +5,27 @@ que acepte matrices de tipo double que devuelva el promedio de los elementos en 
 
 public class Ejercicio7 {
 
+    static double promedioArray(double[][] array){
+        
+        double totalElementos = 0;
+         
+        int contadorElementos = 0;    
+
+        for (int i = 0 ; i < array.length ; i++){
+            
+            for(int j = 0 ; j < array[i].length; j++){
+                totalElementos = totalElementos + array[i][j];
+                contadorElementos ++;
+            }
+            
+        }
+
+        double resultadoArray = totalElementos/contadorElementos;
+
+        return resultadoArray;
+    }
+
+    
     public static void main(String[] args){
 
         double [][] notas = { { 7 , 7 , 7 },
@@ -12,45 +33,8 @@ public class Ejercicio7 {
                               { 9 , 9 , 9 },
                               { 10 , 10 , 10 } };
                               
-        double totalFila = 0;
-        
-        /*creamos un array para almacenar los distintos promedios */
-        double[] promedio = new double[notas.length];     
-
-        for (int i = 0 ; i < notas.length ; i++){
-            
-            for(int j = 0 ; j < notas[i].length; j++){
-                totalFila = totalFila + notas[i][j];
-                System.out.println(totalFila);
-                
-            }
-            
-
-            
-            promedio[i] = totalFila/notas[i].length;
-            totalFila = 0;
-
-            System.out.println("El promedio de la fila " + i + " es " + promedio[i]);
-           
-
-        }
-
-
-                              
-        
-       
-        
-        
-
-
-
-
-         
-
-
-
-        
-
+      
+        System.out.println(promedioArray(notas));
     }
     
 }
